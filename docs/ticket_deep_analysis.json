@@ -1,0 +1,293 @@
+{
+  "total_records": 2559899,
+  "fare_analysis": {
+    "invalid_amount_strings": 0,
+    "zero_or_negative_amounts": 8,
+    "top_fare_amounts": [
+      [
+        9.0,
+        965501
+      ],
+      [
+        13.5,
+        766514
+      ],
+      [
+        18.0,
+        319166
+      ],
+      [
+        22.5,
+        223407
+      ],
+      [
+        4.5,
+        176107
+      ],
+      [
+        27.0,
+        53465
+      ],
+      [
+        36.0,
+        14292
+      ],
+      [
+        45.0,
+        11990
+      ],
+      [
+        40.5,
+        7138
+      ],
+      [
+        26.5,
+        6142
+      ],
+      [
+        22.0,
+        4455
+      ],
+      [
+        54.0,
+        2710
+      ],
+      [
+        67.5,
+        2469
+      ],
+      [
+        31.0,
+        1644
+      ],
+      [
+        13.0,
+        1548
+      ],
+      [
+        35.5,
+        1067
+      ],
+      [
+        44.5,
+        716
+      ],
+      [
+        40.0,
+        501
+      ],
+      [
+        53.0,
+        261
+      ],
+      [
+        17.5,
+        182
+      ]
+    ],
+    "unique_fare_count": 43
+  },
+  "missing_vehicle_analysis": {
+    "by_ac_status": {
+      "True": {
+        "total": 2059092,
+        "missing_vehicle": 1025883,
+        "missing_pct": 49.82
+      },
+      "False": {
+        "total": 500807,
+        "missing_vehicle": 216284,
+        "missing_pct": 43.19
+      }
+    },
+    "top_routes_with_highest_missing_veh_pct": [
+      {
+        "route": "YMS(-)DOWN",
+        "total": 1903,
+        "missing": 1833,
+        "missing_pct": 96.32
+      },
+      {
+        "route": "YMS(+)UP",
+        "total": 2010,
+        "missing": 1935,
+        "missing_pct": 96.27
+      },
+      {
+        "route": "861UP",
+        "total": 740,
+        "missing": 693,
+        "missing_pct": 93.65
+      },
+      {
+        "route": "861DOWN",
+        "total": 630,
+        "missing": 584,
+        "missing_pct": 92.7
+      },
+      {
+        "route": "543DOWN",
+        "total": 596,
+        "missing": 547,
+        "missing_pct": 91.78
+      },
+      {
+        "route": "511EDOWN",
+        "total": 552,
+        "missing": 489,
+        "missing_pct": 88.59
+      },
+      {
+        "route": "523AUP",
+        "total": 796,
+        "missing": 682,
+        "missing_pct": 85.68
+      },
+      {
+        "route": "525ASTL-ANDUP",
+        "total": 617,
+        "missing": 527,
+        "missing_pct": 85.41
+      },
+      {
+        "route": "511DOWN",
+        "total": 2107,
+        "missing": 1761,
+        "missing_pct": 83.58
+      },
+      {
+        "route": "578AUP",
+        "total": 567,
+        "missing": 473,
+        "missing_pct": 83.42
+      },
+      {
+        "route": "336UP",
+        "total": 1170,
+        "missing": 958,
+        "missing_pct": 81.88
+      },
+      {
+        "route": "740UP",
+        "total": 3949,
+        "missing": 3209,
+        "missing_pct": 81.26
+      },
+      {
+        "route": "511UP",
+        "total": 2266,
+        "missing": 1772,
+        "missing_pct": 78.2
+      },
+      {
+        "route": "359DOWN",
+        "total": 2722,
+        "missing": 2125,
+        "missing_pct": 78.07
+      },
+      {
+        "route": "336DOWN",
+        "total": 1115,
+        "missing": 857,
+        "missing_pct": 76.86
+      }
+    ],
+    "top_routes_with_lowest_missing_veh_pct": [
+      {
+        "route": "433STL-KJDUP",
+        "total": 548,
+        "missing": 31,
+        "missing_pct": 5.66
+      },
+      {
+        "route": "901CLUP",
+        "total": 836,
+        "missing": 76,
+        "missing_pct": 9.09
+      },
+      {
+        "route": "YMSMINUS",
+        "total": 1970,
+        "missing": 272,
+        "missing_pct": 13.81
+      },
+      {
+        "route": "901CLDOWN",
+        "total": 762,
+        "missing": 123,
+        "missing_pct": 16.14
+      },
+      {
+        "route": "YMSPLUS",
+        "total": 1943,
+        "missing": 318,
+        "missing_pct": 16.37
+      },
+      {
+        "route": "836STLDOWN",
+        "total": 520,
+        "missing": 89,
+        "missing_pct": 17.12
+      },
+      {
+        "route": "972EXDOWN",
+        "total": 590,
+        "missing": 105,
+        "missing_pct": 17.8
+      },
+      {
+        "route": "801STL-IGI-DWS-22UP",
+        "total": 1547,
+        "missing": 296,
+        "missing_pct": 19.13
+      },
+      {
+        "route": "972EXTUP",
+        "total": 512,
+        "missing": 109,
+        "missing_pct": 21.29
+      },
+      {
+        "route": "727BDOWN",
+        "total": 966,
+        "missing": 229,
+        "missing_pct": 23.71
+      },
+      {
+        "route": "801STL-DW-2UP",
+        "total": 3909,
+        "missing": 930,
+        "missing_pct": 23.79
+      },
+      {
+        "route": "761UP",
+        "total": 6775,
+        "missing": 1687,
+        "missing_pct": 24.9
+      },
+      {
+        "route": "727BUP",
+        "total": 804,
+        "missing": 201,
+        "missing_pct": 25.0
+      },
+      {
+        "route": "801STL-IGI-DWS-22DOWN",
+        "total": 877,
+        "missing": 220,
+        "missing_pct": 25.09
+      },
+      {
+        "route": "D-8702UP",
+        "total": 536,
+        "missing": 138,
+        "missing_pct": 25.75
+      }
+    ]
+  },
+  "duplicate_analysis": {
+    "sampled_records": 255989,
+    "duplicate_composite_keys_in_sample": 0,
+    "max_occurrences_of_same_key": 1
+  }
+}

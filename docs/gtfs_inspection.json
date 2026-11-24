@@ -1,0 +1,205 @@
+{
+  "feed_info": {
+    "headers": [
+      "feed_publisher_name",
+      "feed_publisher_url",
+      "feed_lang",
+      "feed_start_date",
+      "feed_end_date",
+      "feed_version"
+    ],
+    "records": [
+      {
+        "feed_publisher_name": "Delhi Transport Corporation",
+        "feed_publisher_url": "http://dtc.delhi.gov.in/",
+        "feed_lang": "en",
+        "feed_start_date": "20250101",
+        "feed_end_date": "20400101",
+        "feed_version": "v32"
+      },
+      {
+        "feed_publisher_name": "Delhi Integrated Multi-Modal Transit System Ltd.",
+        "feed_publisher_url": "https://www.dimts.in/",
+        "feed_lang": "en",
+        "feed_start_date": "20250101",
+        "feed_end_date": "20400101",
+        "feed_version": "v32"
+      }
+    ]
+  },
+  "agency": {
+    "count": 2,
+    "records": [
+      {
+        "agency_id": "DTC",
+        "agency_name": "Delhi Transport Corporation",
+        "agency_url": "http://dtc.delhi.gov.in/",
+        "agency_timezone": "Asia/Kolkata",
+        "agency_lang": "en",
+        "agency_phone": "",
+        "agency_fare_url": "",
+        "agency_email": ""
+      },
+      {
+        "agency_id": "DIMTS",
+        "agency_name": "Delhi Integrated Multi-Modal Transit System Ltd.",
+        "agency_url": "https://www.dimts.in/",
+        "agency_timezone": "Asia/Kolkata",
+        "agency_lang": "en",
+        "agency_phone": "",
+        "agency_fare_url": "",
+        "agency_email": ""
+      }
+    ],
+    "agency_ids": [
+      "DIMTS",
+      "DTC"
+    ]
+  },
+  "calendar": {
+    "count": 1,
+    "services": [
+      {
+        "service_id": "1",
+        "monday": "1",
+        "tuesday": "1",
+        "wednesday": "1",
+        "thursday": "1",
+        "friday": "1",
+        "saturday": "1",
+        "sunday": "1",
+        "start_date": "20250101",
+        "end_date": "20400101"
+      }
+    ],
+    "covers_october_2026": true
+  },
+  "routes": {
+    "headers": [
+      "agency_id",
+      "route_id",
+      "route_long_name",
+      "route_short_name",
+      "route_desc",
+      "route_type"
+    ],
+    "total_routes": 2574,
+    "unique_route_ids": 2574,
+    "unique_short_names": 2574,
+    "unique_long_names": 2574,
+    "route_types": {
+      "3": 2574
+    },
+    "agency_distribution": {
+      "DIMTS": 760,
+      "DTC": 1814
+    },
+    "sample_routes": [
+      "0114(NS)UP",
+      "0118EXT(NS)DOWN",
+      "012(NS)UP",
+      "0131(NS)DOWN",
+      "0131(NS)UP",
+      "0236(NS)DOWN",
+      "0236(NS)UP",
+      "0261(NS)DOWN",
+      "03DOWN",
+      "03STL-IPDDOWN",
+      "03UP",
+      "044(NS)UP",
+      "0543A(NS)UP",
+      "0729(NS)DOWN",
+      "0729(NS)UP"
+    ]
+  },
+  "stops": {
+    "headers": [
+      "stop_id",
+      "stop_code",
+      "stop_name",
+      "stop_lat",
+      "stop_lon"
+    ],
+    "total_stops": 6862,
+    "unique_stop_ids": 6862,
+    "unique_stop_names": 4614,
+    "unique_stop_codes": 6862,
+    "lat_range": [
+      28.191699826426554,
+      29.691044517287235
+    ],
+    "lon_range": [
+      76.60075639009779,
+      77.43117
+    ],
+    "invalid_or_out_of_bounds_coords": 0,
+    "sample_stop_names": [
+      "100 Foota Road Ghitorni",
+      "11 Murti",
+      "11 Murti /  Sardar Patel Road Xing",
+      "11Murti",
+      "25 Foota Road",
+      "28 Foota Road",
+      "29/30 Xing Pachim Vihar",
+      "36 Block Trilok Puri",
+      "A 1 Keshav Puram",
+      "A 4 Paschim vihar",
+      "A Blk Raghubir Nagar",
+      "A Block Dilshad Garden Bloomfield Public School / DILSHAD GARDEN TERMINAL",
+      "A Block Gopal Nagar",
+      "A Block Mahipalpur",
+      "A Block Sec 11 Rohini"
+    ]
+  },
+  "trips": {
+    "headers": [
+      "route_id",
+      "service_id",
+      "trip_id",
+      "trip_headsign",
+      "trip_short_name",
+      "direction_id",
+      "block_id",
+      "shape_id",
+      "wheelchair_accessible",
+      "bikes_allowed"
+    ],
+    "total_trips": 80357,
+    "unique_trip_ids": 80357,
+    "routes_in_trips": 2574,
+    "unmatched_route_ids": 0,
+    "unmatched_service_ids": 0,
+    "direction_distribution": {
+      "": 80357
+    },
+    "unique_shapes": 3498,
+    "trips_per_route": {
+      "min": 1,
+      "max": 303,
+      "avg": 31.22
+    }
+  },
+  "stop_times": {
+    "headers": [
+      "trip_id",
+      "arrival_time",
+      "departure_time",
+      "stop_id",
+      "stop_sequence",
+      "fare_stage",
+      "stop_dist"
+    ],
+    "total_stop_times": 2737136,
+    "unique_trips": 80357,
+    "unique_stops": 6862,
+    "unmatched_trip_ids": 0,
+    "unmatched_stop_ids": 0,
+    "max_stop_sequence": 182,
+    "records_past_midnight": 18457
+  },
+  "integrity": {
+    "routes_without_trips": 0,
+    "trips_without_stop_times": 0,
+    "stops_without_stop_times": 0
+  }
+}

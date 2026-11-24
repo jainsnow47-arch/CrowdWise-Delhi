@@ -1,0 +1,212 @@
+{
+  "file_name": "October-Delhi.csv",
+  "total_records": 2559899,
+  "columns": [
+    "passenger_count",
+    "amount",
+    "vehicle_number",
+    "ticket_type_id",
+    "end_stop_name",
+    "route",
+    "start_stop_name",
+    "created_at",
+    "is_ac"
+  ],
+  "has_unique_ticket_identifier": false,
+  "null_counts": {
+    "passenger_count": 0,
+    "amount": 0,
+    "vehicle_number": 1242167,
+    "ticket_type_id": 0,
+    "end_stop_name": 0,
+    "route": 0,
+    "start_stop_name": 0,
+    "created_at": 0,
+    "is_ac": 0
+  },
+  "null_percentages": {
+    "passenger_count": 0.0,
+    "amount": 0.0,
+    "vehicle_number": 48.52,
+    "ticket_type_id": 0.0,
+    "end_stop_name": 0.0,
+    "route": 0.0,
+    "start_stop_name": 0.0,
+    "created_at": 0.0,
+    "is_ac": 0.0
+  },
+  "unique_counts": {
+    "routes": 2259,
+    "vehicles": 6809,
+    "start_stops": 7148,
+    "end_stops": 6941,
+    "all_stops": 7552
+  },
+  "sample_routes": [
+    "0114(NS)UP",
+    "0118EXT(NS)DOWN",
+    "0118EXT(NS)UP",
+    "012(NS)UP",
+    "0131(NS)DOWN",
+    "0131(NS)UP",
+    "0236(NS)DOWN",
+    "0236(NS)UP",
+    "0261(NS)DOWN",
+    "0261(NS)UP",
+    "03DOWN",
+    "03UP",
+    "0405(NS)DOWN",
+    "0405(NS)UP",
+    "0419(NS)DOWN"
+  ],
+  "sample_vehicles": [
+    "DL1PD4080",
+    "DL1PD4085",
+    "DL1PD4089",
+    "DL1PD4092",
+    "DL1PD4095",
+    "DL1PD4102",
+    "DL1PD4119",
+    "DL1PD4123",
+    "DL1PD4124",
+    "DL1PD4126"
+  ],
+  "ticket_type_distribution": {
+    "1": 2559899
+  },
+  "is_ac_distribution": {
+    "True": 2059092,
+    "False": 500807
+  },
+  "passenger_count_distribution": {
+    "1": 2392082,
+    "2": 141930,
+    "3": 25886,
+    "6": 1
+  },
+  "timestamp_analysis": {
+    "min_timestamp": "2026-10-01T00:00:01.796721+05:30",
+    "max_timestamp": "2026-10-31T23:58:22.450250+05:30",
+    "invalid_timestamp_count": 0,
+    "date_coverage_days": 31,
+    "daily_record_counts": {
+      "2026-10-01": 95155,
+      "2026-10-02": 41016,
+      "2026-10-03": 75708,
+      "2026-10-04": 46622,
+      "2026-10-05": 99517,
+      "2026-10-06": 81592,
+      "2026-10-07": 100385,
+      "2026-10-08": 102219,
+      "2026-10-09": 100032,
+      "2026-10-10": 67249,
+      "2026-10-11": 45057,
+      "2026-10-12": 94588,
+      "2026-10-13": 101697,
+      "2026-10-14": 101540,
+      "2026-10-15": 99848,
+      "2026-10-16": 98503,
+      "2026-10-17": 68836,
+      "2026-10-18": 35009,
+      "2026-10-19": 74801,
+      "2026-10-20": 49375,
+      "2026-10-21": 93657,
+      "2026-10-22": 95860,
+      "2026-10-23": 95559,
+      "2026-10-24": 81046,
+      "2026-10-25": 50161,
+      "2026-10-26": 92632,
+      "2026-10-27": 102746,
+      "2026-10-28": 100879,
+      "2026-10-29": 92529,
+      "2026-10-30": 91896,
+      "2026-10-31": 84185
+    },
+    "hourly_distribution": {
+      "0": 1388,
+      "1": 528,
+      "2": 381,
+      "3": 425,
+      "4": 1979,
+      "5": 24137,
+      "6": 68323,
+      "7": 150451,
+      "8": 316049,
+      "9": 351443,
+      "10": 204056,
+      "11": 111351,
+      "12": 85467,
+      "13": 70135,
+      "14": 68173,
+      "15": 73149,
+      "16": 97971,
+      "17": 164237,
+      "18": 235349,
+      "19": 222243,
+      "20": 165676,
+      "21": 96317,
+      "22": 42571,
+      "23": 8100
+    }
+  },
+  "duplicate_analysis": {
+    "vehicle_timestamp_collisions_sample": 0
+  },
+  "sample_rows": [
+    {
+      "passenger_count": "1",
+      "amount": "22",
+      "vehicle_number": "NULL",
+      "ticket_type_id": "1",
+      "end_stop_name": "Mahamaya Flyover West",
+      "route": "8UP",
+      "start_stop_name": "Ali Village",
+      "created_at": "2026-10-28 10:19:18.780611+05:30",
+      "is_ac": "True"
+    },
+    {
+      "passenger_count": "1",
+      "amount": "9",
+      "vehicle_number": "DL1PD6826",
+      "ticket_type_id": "1",
+      "end_stop_name": "Crown Plaza",
+      "route": "8ADOWN",
+      "start_stop_name": "Kalindi Kunj Bdr",
+      "created_at": "2026-10-28 10:19:29.989461+05:30",
+      "is_ac": "True"
+    },
+    {
+      "passenger_count": "1",
+      "amount": "13.5",
+      "vehicle_number": "DL51EV9760",
+      "ticket_type_id": "1",
+      "end_stop_name": "Clal Chowk",
+      "route": "433UP",
+      "start_stop_name": "Andrews Ganj",
+      "created_at": "2026-10-28 10:19:46.297108+05:30",
+      "is_ac": "True"
+    },
+    {
+      "passenger_count": "1",
+      "amount": "13.5",
+      "vehicle_number": "NULL",
+      "ticket_type_id": "1",
+      "end_stop_name": "Ice Factory",
+      "route": "208DOWN",
+      "start_stop_name": "West Patel Nagar",
+      "created_at": "2026-10-28 10:19:47.853905+05:30",
+      "is_ac": "True"
+    },
+    {
+      "passenger_count": "1",
+      "amount": "9",
+      "vehicle_number": "DL51EV9810",
+      "ticket_type_id": "1",
+      "end_stop_name": "Mallu Farm",
+      "route": "516UP",
+      "start_stop_name": "Chhatarpur Extension",
+      "created_at": "2026-10-28 10:19:48.525393+05:30",
+      "is_ac": "True"
+    }
+  ]
+}

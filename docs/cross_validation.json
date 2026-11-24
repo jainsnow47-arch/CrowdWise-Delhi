@@ -1,0 +1,230 @@
+{
+  "summary": {
+    "total_tickets": 2559899,
+    "unique_ticket_routes": 2259,
+    "unique_gtfs_routes": 2574,
+    "unique_ticket_stops": 7552,
+    "unique_gtfs_stops": 4614
+  },
+  "route_matching": {
+    "distinct_matched_routes_exact": 1980,
+    "distinct_matched_routes_total": 1980,
+    "distinct_match_percentage": 87.65,
+    "ticket_record_exact_matches": 2514677,
+    "ticket_record_norm_matches": 0,
+    "ticket_record_total_matches": 2514677,
+    "ticket_record_match_percentage": 98.23,
+    "unmatched_ticket_records": 45222,
+    "top_unmatched_routes": [
+      [
+        "567BSTLUP",
+        3179
+      ],
+      [
+        "567BSTLDOWN",
+        2932
+      ],
+      [
+        "628STLDOWN",
+        2542
+      ],
+      [
+        "ML96UP",
+        2221
+      ],
+      [
+        "ML96DOWN",
+        1963
+      ],
+      [
+        "729BDOWN",
+        1782
+      ],
+      [
+        "522BDOWN2",
+        1669
+      ],
+      [
+        "628STLUP",
+        1550
+      ],
+      [
+        "729BUP",
+        1288
+      ],
+      [
+        "794AUP2",
+        865
+      ],
+      [
+        "BPEXPUP",
+        822
+      ],
+      [
+        "523AUP",
+        796
+      ],
+      [
+        "588LSTLDOWN",
+        768
+      ],
+      [
+        "861UP",
+        740
+      ],
+      [
+        "BPEXPDOWN",
+        725
+      ]
+    ]
+  },
+  "stop_matching": {
+    "distinct_matched_stops_exact": 2632,
+    "distinct_matched_stops_total": 3964,
+    "distinct_match_percentage": 52.49,
+    "start_stop_matches_exact": 1447251,
+    "start_stop_matches_total": 1886440,
+    "start_stop_match_percentage": 73.69,
+    "end_stop_matches_exact": 1457226,
+    "end_stop_matches_total": 1904567,
+    "end_stop_match_percentage": 74.4,
+    "both_stops_exact": 875199,
+    "both_stops_exact_percentage": 34.19,
+    "both_stops_normalized": 1515501,
+    "both_stops_normalized_percentage": 59.2,
+    "top_unmatched_start_stops": [
+      [
+        "Mahipal Pur",
+        11409
+      ],
+      [
+        "West Patel Nagar",
+        10857
+      ],
+      [
+        "Badarpur Border",
+        10756
+      ],
+      [
+        "Pul Prehladpur ( Badarpur)",
+        9007
+      ],
+      [
+        "Hamdard Nagar",
+        6904
+      ],
+      [
+        "Ashram",
+        6563
+      ],
+      [
+        "Badarpur",
+        5950
+      ],
+      [
+        "Laxmi Nagar",
+        5405
+      ],
+      [
+        "Laxmi Nagar Xing",
+        4996
+      ],
+      [
+        "Munirka Village",
+        4687
+      ],
+      [
+        "Punjabi Bagh",
+        4258
+      ],
+      [
+        "Shakarpur",
+        3975
+      ],
+      [
+        "Government Model School",
+        3809
+      ],
+      [
+        "S.J. Hospital",
+        3739
+      ],
+      [
+        "Peera Garhi",
+        3735
+      ]
+    ],
+    "top_unmatched_end_stops": [
+      [
+        "Mahipal Pur",
+        11992
+      ],
+      [
+        "Badarpur Border",
+        9777
+      ],
+      [
+        "Hamdard Nagar",
+        9241
+      ],
+      [
+        "Ashram",
+        6814
+      ],
+      [
+        "Laxmi Nagar",
+        6619
+      ],
+      [
+        "West Patel Nagar",
+        6187
+      ],
+      [
+        "Laxmi Nagar Xing",
+        5662
+      ],
+      [
+        "S.J. Hospital",
+        5635
+      ],
+      [
+        "Munirka Village",
+        5220
+      ],
+      [
+        "Andheria More",
+        5059
+      ],
+      [
+        "Punjabi Bagh",
+        4755
+      ],
+      [
+        "Peera Garhi",
+        4567
+      ],
+      [
+        "Badarpur",
+        4511
+      ],
+      [
+        "Shadi Pur Metro Station",
+        4437
+      ],
+      [
+        "Shadi Pur Depot",
+        4074
+      ]
+    ]
+  },
+  "combined_matching": {
+    "route_and_both_stops_exact": 859037,
+    "route_and_both_stops_exact_percentage": 33.56,
+    "route_and_both_stops_norm": 1488252,
+    "route_and_both_stops_norm_percentage": 58.14,
+    "both_stops_present_on_gtfs_route": 693222,
+    "both_stops_present_percentage": 27.08,
+    "valid_itinerary_order_count": 647328,
+    "valid_itinerary_order_percentage": 25.29
+  }
+}
