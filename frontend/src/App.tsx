@@ -131,7 +131,7 @@ export function App() {
               className="tab-button"
               onClick={() => setActiveTab("commuter")}
             >
-              Commuter Planner
+              Commuter Planner (Passengers)
             </button>
             <button
               ref={operatorTabRef}
@@ -143,7 +143,7 @@ export function App() {
               className="tab-button"
               onClick={() => setActiveTab("operator")}
             >
-              Operator &amp; Planner
+              Operator &amp; Planner (Schedulers)
             </button>
           </div>
 

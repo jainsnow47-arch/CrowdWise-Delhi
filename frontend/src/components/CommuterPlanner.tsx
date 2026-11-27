@@ -347,15 +347,30 @@ export function CommuterPlanner({ onAnnounce }: CommuterPlannerProps) {
       {result && (
         <section aria-label="Journey options">
           {result.options.length === 0 ? (
-            <div className="surface-card empty-state">
-              <p>{result.note || "No matching bus routes found for these hubs at this time."}</p>
+            <div className="banner banner-unavailable" role="status">
+              <div>
+                <strong>✕ No Direct Bus Routes Available</strong> — No direct GTFS bus
+                routes connect <em>{originHub}</em> to <em>{destHub}</em> at this time.
+              </div>
             </div>
           ) : (
-            <ul className="options-list">
-              {result.options.map((opt) => (
-                <JourneyOptionCard key={opt.id} option={opt} />
-              ))}
-            </ul>
+            <>
+              <div className="banner banner-available" role="status" style={{ marginBlockEnd: "0.75rem" }}>
+                <div>
+                  <strong>
+                    ✓ {result.options.length}{" "}
+                    {result.options.length === 1 ? "Bus Route" : "Bus Routes"} Available
+                  </strong>{" "}
+                  — Comparing fastest vs. most comfortable options for{" "}
+                  <em>{originHub}</em> → <em>{destHub}</em>.
+                </div>
+              </div>
+              <ul className="options-list">
+                {result.options.map((opt) => (
+                  <JourneyOptionCard key={opt.id} option={opt} />
+                ))}
+              </ul>
+            </>
           )}
         </section>
       )}

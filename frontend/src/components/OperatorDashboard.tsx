@@ -114,10 +114,11 @@ export function OperatorDashboard({ onAnnounce }: OperatorDashboardProps) {
     <div className="panel-body">
       <section className="surface-card" aria-labelledby={sectionTitleId}>
         <h2 id={sectionTitleId} className="section-heading">
-          Network Bottlenecks &amp; Extra Bus Simulator
+          Operator &amp; Planner — Fleet Bottlenecks &amp; Dispatch Simulator
         </h2>
         <p className="section-lead">
-          Inspect peak-load corridors by day type and hour, then simulate adding +1 or +2 extra buses per hour.
+          <strong>For Transit Operators, Depot Schedulers &amp; Planners (DTC / DIMTS):</strong>{" "}
+          Inspect peak-load corridors by day type and hour, then simulate dispatching +1 or +2 extra buses per hour before scheduling shifts.
         </p>
 
         <div className="operator-controls">

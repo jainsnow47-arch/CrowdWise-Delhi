@@ -8,8 +8,8 @@ The CrowdWise-Delhi pipeline reconstructs fine-grained transit passenger demand 
 
 - **Two-Tier Trip Reconstruction**: Vehicle runs are reconstructed using a hybrid approach combining **51.48% Tier-1** direct vehicle tracking logs (`vehicle_number` deterministic sequence matching) and **48.52% Tier-2** heuristic route-time window allocation for unassigned departures.
 - **Passenger Count & Soft Alighting**: Ticketing transactions are aggregated into spatial-temporal segment cells with a distributed **0.15 / 0.70 / 0.15** soft alighting kernel across adjacent route stops to smooth boarding/alighting drop-offs.
-- **Unobserved Rider Expansion**: Explicitly scales observed ticketing data using an `is_ac`-aware expansion factor accounting for unobserved ridership segments (bus pass holders, women's free-travel pink tickets, and un-scanned cash fares).
-- **Fleet Capacity Normalization**: Standardizes capacity based on bus form-factor specifications—**9-meter midi buses (22 seats)** versus **12-meter standard buses (38 seats)**—yielding standardized occupancy and crowding ratios (`seats_available`).
+- **Unobserved Rider Expansion**: Explicitly scales observed digital ticketing data (`~8–10%` of total Delhi bus boardings) using an `is_ac`-aware expansion factor (`21.0x` AC, `26.0x` Non-AC) accounting for unobserved ridership segments (bus pass holders, women's free-travel pink tickets, and cash ETM paper tickets).
+- **Fleet Capacity Normalization**: Standardizes capacity based on bus form-factor specifications—**9-meter midi buses (22 seats)** versus **12-meter standard buses (38 seats)**—yielding standardized load factors (`<=0.85x` `seats_available`, `0.85x–1.35x` `standing_room`, `>1.35x` `crowded`).
 - **Sparsity Imputation & Day-Type Stratification**: Employs **LightGBM quantile regression** to impute sparse segment-hour cells. Days are stratified into weekday, saturday, and `sunday_holiday` regimes, incorporating explicit holiday overrides (`Oct 2`, `Oct 20`).
 
 ---
@@ -20,7 +20,7 @@ Based on `data/processed/validation_report.json`, the validation metrics across 
 
 - **Total Ticket Volume**: `2,559,899` transactions processed (`total_tickets`).
 - **Matching Quality**: `98.8%` route match percentage (`route_matched_pct`) and `85.75%` strict ordered itinerary match (`ordered_itinerary_pct`).
-- **Tier Distribution**: `100%` coverage across reconstructed spatial-temporal segment cells (`seats_available`: `2,732,736`).
+- **Tier Distribution**: Across `2,732,736` segment cells — `seats_available`: `2,470,974` (90.4%), `standing_room`: `185,913` (6.8%), `crowded`: `75,849` (2.8%).
 - **Confidence Distribution**: 
   - High Confidence: `1,004,200` cells
   - Medium Confidence: `765,232` cells

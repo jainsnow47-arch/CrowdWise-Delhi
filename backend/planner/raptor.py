@@ -32,6 +32,11 @@ class CrowdWisePlanner:
         self.stop_routes: dict[str, list[tuple[str, int]]] = {}
         self.stop_coords: dict[str, tuple[float, float]] = {}
         self.stop_names: dict[str, str] = {}
+        self.route_short_names: dict[str, str] = {}
+        if db_path.exists():
+            with sqlite3.connect(db_path) as conn:
+                for rid, sn in conn.execute("SELECT route_id, route_short_name FROM routes"):
+                    self.route_short_names[str(rid)] = sn
         if raptor_path.exists():
             with open(raptor_path, "rb") as f:
                 data = pickle.load(f)
@@ -123,7 +128,7 @@ class CrowdWisePlanner:
                                 "max_load_factor": round(max_lf, 2),
                                 "avg_load_factor": round(avg_lf, 2),
                                 "legs": [{
-                                    "route_id": rid,
+                                    "route_id": self.route_short_names.get(str(rid), rid),
                                     "from_stop": self.stop_names.get(osid, osid),
                                     "to_stop": self.stop_names.get(stops[e_idx], stops[e_idx]),
                                     "stop_count": e_idx - s_idx,
@@ -168,8 +173,7 @@ class CrowdWisePlanner:
             later_bin = min(23, (depart_min + 20) // 60)
             if later_bin != time_bin:
                 with self._conn() as conn:
-                    rid = fastest["legs"][0]["route_id"]
-                    s_len = len(fastest["legs"][0]["stretches"])
+                    rid = fastest["id"].removeprefix("direct-")
                     # Quick check on same route at later_bin
                     row = conn.execute(
                         "SELECT MAX(load_factor) as mlf FROM segment_crowding WHERE route_id=? AND day_type=? AND time_bin=?",
