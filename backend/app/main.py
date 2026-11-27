@@ -56,15 +56,24 @@ def search_stops(q: str = Query(..., min_length=2)):
         return {"stops": []}
     with sqlite3.connect(DB_PATH) as conn:
         conn.row_factory = sqlite3.Row
+        q_low = q.lower()
         rows = conn.execute(
             """
             SELECT hub_name, GROUP_CONCAT(stop_id) AS stop_ids, AVG(lat) AS lat, AVG(lon) AS lon
             FROM stops
             WHERE LOWER(hub_name) LIKE ?
             GROUP BY hub_name
+            ORDER BY
+                CASE
+                    WHEN LOWER(hub_name) = ? THEN 0
+                    WHEN LOWER(hub_name) LIKE ? THEN 1
+                    ELSE 2
+                END,
+                LENGTH(hub_name),
+                hub_name
             LIMIT 15
             """,
-            (f"%{q.lower()}%",),
+            (f"%{q_low}%", q_low, f"{q_low}%"),
         ).fetchall()
     return {
         "stops": [
