@@ -1,5 +1,6 @@
 # CrowdWise Delhi — Crowdedness-Aware Bus Journey Planner
 **Transport Stack Hackathon 2026 · Problem 2 / Phase 1**
+**Live Demo:** https://crowdwise-web-production.up.railway.app
 
 CrowdWise Delhi estimates segment-level bus crowding across Delhi from October 2026 e-ticketing/ETM records (`2,559,899` tickets) and static GTFS (`2,574` routes, `6,862` stops), and surfaces crowding alongside travel time in a commuter journey planner and operator bottleneck dashboard.
 
