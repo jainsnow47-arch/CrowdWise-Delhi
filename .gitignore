@@ -10,6 +10,8 @@ data/raw/*
 data/gtfs/*
 !data/gtfs/.gitkeep
 
+data/processed/
+
 # Python
 __pycache__/
 *.py[cod]
@@ -30,5 +32,6 @@ dist/
 .DS_Store
 Thumbs.db
 
-# Logs
+# Logs & Demo Videos
 *.log
+*.mp4

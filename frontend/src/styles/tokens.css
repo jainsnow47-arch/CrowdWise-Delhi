@@ -1,0 +1,97 @@
+:root {
+  color-scheme: light dark;
+
+  --font-sans: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, monospace;
+
+  --bg-page: #f4f6f8;
+  --bg-surface: #ffffff;
+  --bg-surface-muted: #eef2f6;
+  --bg-elevated: #ffffff;
+
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-muted: #6b7280;
+  --text-inverse: #ffffff;
+
+  --border-subtle: #d1d5db;
+  --border-strong: #6b7280;
+
+  --brand-color: #0f766e;
+  --brand-hover: #0d5e58;
+  --brand-soft: #ccfbf1;
+  --brand-on-soft: #115e59;
+
+  --focus-ring: #0b57d0;
+
+  --tier-seats-bg: #dcfce7;
+  --tier-seats-fg: #14532d;
+  --tier-seats-bar: #15803d;
+  --tier-seats-border: #86efac;
+
+  --tier-standing-bg: #fef3c7;
+  --tier-standing-fg: #78350f;
+  --tier-standing-bar: #d97706;
+  --tier-standing-border: #fcd34d;
+
+  --tier-crowded-bg: #fee2e2;
+  --tier-crowded-fg: #7f1d1d;
+  --tier-crowded-bar: #b91c1c;
+  --tier-crowded-border: #fca5a5;
+
+  --tip-bg: #eff6ff;
+  --tip-border: #93c5fd;
+  --tip-fg: #1e3a8a;
+
+  --shadow-sm: 0 1px 2px rgb(15 23 42 / 0.06);
+  --shadow-md: 0 6px 18px rgb(15 23 42 / 0.08);
+  --radius-sm: 0.375rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 0.875rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-page: #0b1117;
+    --bg-surface: #131c26;
+    --bg-surface-muted: #1b2634;
+    --bg-elevated: #182330;
+
+    --text-primary: #f3f4f6;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    --text-inverse: #0b1117;
+
+    --border-subtle: #2c3a4b;
+    --border-strong: #64748b;
+
+    --brand-color: #2dd4bf;
+    --brand-hover: #5eead4;
+    --brand-soft: #134e4a;
+    --brand-on-soft: #99f6e4;
+
+    --focus-ring: #7dd3fc;
+
+    --tier-seats-bg: #052e16;
+    --tier-seats-fg: #bbf7d0;
+    --tier-seats-bar: #22c55e;
+    --tier-seats-border: #166534;
+
+    --tier-standing-bg: #451a03;
+    --tier-standing-fg: #fde68a;
+    --tier-standing-bar: #f59e0b;
+    --tier-standing-border: #92400e;
+
+    --tier-crowded-bg: #450a0a;
+    --tier-crowded-fg: #fecaca;
+    --tier-crowded-bar: #ef4444;
+    --tier-crowded-border: #991b1b;
+
+    --tip-bg: #0f2544;
+    --tip-border: #1d4ed8;
+    --tip-fg: #bfdbfe;
+
+    --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.35);
+    --shadow-md: 0 8px 22px rgb(0 0 0 / 0.45);
+  }
+}
